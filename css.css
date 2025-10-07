@@ -1,0 +1,170 @@
+/* * Data Story Website - Stylesheet 
+ * Theme: Modern, Professional, and Accessible (High Contrast)
+ * Color Palette: Deep Blue (#1a2c5b), Light Gray (#f0f3f8), Accent Orange (#ff6b6b)
+ * Font Pairing: 'Inter' (headings), 'Roboto' (body text)
+ */
+
+/* Import Fonts for a modern, clean look */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --color-primary: #1a2c5b; /* Deep Blue */
+    --color-secondary: #ff6b6b; /* Accent Orange */
+    --color-background: #f0f3f8; /* Light Gray Background */
+    --color-text: #333333; /* Dark Gray Text */
+    --color-footer: #cccccc; /* Footer Text */
+    --font-heading: 'Inter', sans-serif;
+    --font-body: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--color-text);
+    background-color: var(--color-background);
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+/* Headings */
+h1, h2 {
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+    text-align: center;
+    border-bottom: 2px solid var(--color-secondary);
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 2.2rem;
+}
+
+/* Narrative Paragraph */
+p {
+    text-align: justify;
+    margin: 20px 0;
+    font-size: 1.1rem;
+}
+
+/* --- Table Styling --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.95em;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden; /* Ensures rounded corners apply to content */
+}
+
+caption {
+    font-style: italic;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    text-align: left;
+    color: var(--color-primary);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+}
+
+th {
+    background-color: var(--color-primary);
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    letter-spacing: 0.05em;
+}
+
+/* Zebra Striping */
+tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Conditional Formatting Simulation (Color Coding the Growth Category) */
+.high-growth {
+    font-weight: bold;
+    color: #0d9488; /* Teal/Strong Green */
+}
+.medium-growth {
+    font-weight: bold;
+    color: #facc15; /* Yellow/Amber */
+}
+.low-growth {
+    font-weight: bold;
+    color: #ef4444; /* Red */
+}
+
+
+/* --- Image/Chart Styling --- */
+.chart-container {
+    text-align: center;
+    margin: 40px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* --- Footer and Links --- */
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #dddddd;
+    color: var(--color-text);
+    font-size: 0.9em;
+}
+
+footer a {
+    color: var(--color-secondary);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+        margin: 10px;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    table {
+        display: block;
+        overflow-x: auto; /* Allows horizontal scrolling for tables on small screens */
+    }
+}
